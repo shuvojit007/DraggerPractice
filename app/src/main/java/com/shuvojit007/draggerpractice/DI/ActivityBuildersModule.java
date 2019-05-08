@@ -1,10 +1,9 @@
 package com.shuvojit007.draggerpractice.DI;
 
-import com.shuvojit007.draggerpractice.AuthActivity;
+import com.shuvojit007.draggerpractice.ui.Auth.AuthActivity;
 import com.shuvojit007.draggerpractice.MainActivity;
 
 import dagger.Module;
-import dagger.Provides;
 import dagger.android.ContributesAndroidInjector;
 
 

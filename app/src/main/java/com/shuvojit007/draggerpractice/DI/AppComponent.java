@@ -3,6 +3,8 @@ package com.shuvojit007.draggerpractice.DI;
 import android.app.Application;
 
 import com.shuvojit007.draggerpractice.BaseApplication;
+import com.shuvojit007.draggerpractice.DI.auth.AuthViewModelsModule;
+import com.shuvojit007.draggerpractice.ui.Auth.AuthViewModel;
 
 import javax.inject.Singleton;
 
@@ -21,8 +23,8 @@ import dagger.android.support.AndroidSupportInjectionModule;
  * application scope instances (eg. OkHttp, Database, SharedPrefs.).
  * This Component is root of our dagger graph.
  * Application component is providing 3 module in our app
- * <p>
- * <p>
+ *
+ *
  * AndroidInjectionModule : We didn’t create this. It is an internal class in Dagger 2.10.
  * Provides our activities and fragments with given module.
  **/
@@ -42,6 +44,8 @@ import dagger.android.support.AndroidSupportInjectionModule;
         AndroidSupportInjectionModule.class,
         ActivityBuildersModule.class,
         AppModule.class,
+        ViewModelFactoryModule.class,
+        AuthViewModelsModule.class
 })
 public interface AppComponent extends AndroidInjector<BaseApplication> {
 

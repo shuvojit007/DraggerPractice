@@ -1,4 +1,4 @@
-package com.shuvojit007.draggerpractice;
+package com.shuvojit007.draggerpractice.ui.Auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.RequestManager;
+import com.shuvojit007.draggerpractice.R;
 
 import javax.inject.Inject;
 
